@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register user</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section class="register">
+    <form id="userForm" method="post" action="/register">
+      <div class="form-row">
+        <label for="name">Nombre: </label>
+        <input id='name' name="name" type="text">
+      </div>
+      <div class="form-row">
+        <label for="userName">Usuario: </label>
+        <input id='username' name="username" type="text">
+      </div class="form-row">
+      <div class="form-row">
+        <label for="email">Email: </label>
+        <input id='email' name="email" type="text">
+      </div>
+      <button type="submit">Crear Usuario</button>
+    </form>
+  </section>
+
+  <section>
+    <table id="usersTable">
+    </table>
+  </section>
+  <section>
+    <div id="operation-result">
+
+    </div>
+  </section>
+  <script src="js/showUsers.js"></script>
+  <script src="js/createUser.js"></script>
+  <script src="js/inactivateUser.js"></script>
+  <script src="js/editUser.js"></script>
+</body>
+
+</html>
